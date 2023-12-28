@@ -1,41 +1,32 @@
-Título do Projeto
-Web Scraping de "Empire Online" - Lista de Melhores Filmes
+Project Title
+Web Scraping "Empire Online" - Best Movies List
 
-Descrição
-Este código Python utiliza a biblioteca BeautifulSoup para fazer web scraping do site da Empire Online, especificamente para a página que lista os melhores filmes. Ele extrai os títulos dos filmes e os armazena em um arquivo de texto.
+Description
+This Python code utilizes the BeautifulSoup library to perform web scraping on the Empire Online website, specifically targeting the page that lists the best movies. It extracts movie titles and stores them in a text file.
 
-Pré-requisitos
+Prerequisites
 Python 3.x
-Bibliotecas: BeautifulSoup, requests
-Instalação
-Clone o repositório:
+Libraries: BeautifulSoup, requests
+Installation
+Clone the repository:
+git clone https://github.com/your-username/repository-name.git
 
-bash
-Copy code
-git clone https://github.com/seu-usuario/nome-do-repo.git
-Instale as dependências:
-
-bash
-Copy code
+Install the dependencies:
 pip install beautifulsoup4 requests
-Como usar
-Execute o script scrape_movies.py.
 
-bash
-Copy code
+How to Use
+Run the scrape_movies.py script.
 python scrape_movies.py
-Aguarde até que o processo de scraping seja concluído.
 
-O resultado será salvo em um arquivo chamado movie.txt, contendo a lista de filmes da Empire Online em ordem reversa.
+Wait until the scraping process is complete.
 
-Observações
-Certifique-se de respeitar as políticas de uso do site ao fazer scraping. Além disso, este código é um exemplo básico e pode precisar de ajustes dependendo de alterações na estrutura do site.
+The result will be saved in a file named movie.txt, containing the list of Empire Online movies in reverse order.
 
-Contribuições
-Contribuições são bem-vindas! Sinta-se à vontade para propor melhorias, corrigir problemas ou otimizar o código.
+Notes
+Please make sure to adhere to the website's terms of use when performing web scraping. Additionally, this code serves as a basic example and may require adjustments based on changes to the site's structure.
 
-Autor
-Seu Nome
+Contributions
+Contributions are welcome! Feel free to propose enhancements, fix issues, or optimize the code.
 
-Licença
-Este projeto está licenciado sob a MIT License.
+Author
+Gomes Cabral
