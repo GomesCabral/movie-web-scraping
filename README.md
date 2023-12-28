@@ -1,32 +1,26 @@
-Project Title
-Web Scraping "Empire Online" - Best Movies List
+# Movie Title Scraper
 
-Description
-This Python code utilizes the BeautifulSoup library to perform web scraping on the Empire Online website, specifically targeting the page that lists the best movies. It extracts movie titles and stores them in a text file.
+This Python script utilizes BeautifulSoup and Requests libraries to scrape movie titles from a webpage and save them in a text file.
 
-Prerequisites
-Python 3.x
-Libraries: BeautifulSoup, requests
-Installation
-Clone the repository:
-git clone https://github.com/your-username/repository-name.git
+## Description
 
-Install the dependencies:
-pip install beautifulsoup4 requests
+The code accesses a specific URL (`https://web.archive.org/web/20200518073855/https://www.empireonline.com/movies/features/best-movies-2/`) using the `requests` library. Then, it uses `BeautifulSoup` to parse the HTML content and find all movie titles under the `<h3>` tag with the class `title`. The script retrieves the movie titles, reverses their order, and saves them into a text file named `movie.txt`.
 
-How to Use
-Run the scrape_movies.py script.
-python scrape_movies.py
+## How to Use
 
-Wait until the scraping process is complete.
+1. Ensure you have Python installed.
+2. Install the necessary libraries by running:
+   ```bash
+   pip install beautifulsoup4 requests
 
-The result will be saved in a file named movie.txt, containing the list of Empire Online movies in reverse order.
+1. Run the Python script movie_title_scraper.py.
+   python movie_title_scraper.py
+2. After execution, the script will generate a file named movie.txt containing a list of movie titles scraped from the specified URL.
 
-Notes
-Please make sure to adhere to the website's terms of use when performing web scraping. Additionally, this code serves as a basic example and may require adjustments based on changes to the site's structure.
-
-Contributions
-Contributions are welcome! Feel free to propose enhancements, fix issues, or optimize the code.
-
+Important Note
+Ensure that you have proper permissions to scrape content from the website in accordance with their terms of service and legal constraints.
+Libraries Used
+BeautifulSoup
+Requests
 Author
 Gomes Cabral
