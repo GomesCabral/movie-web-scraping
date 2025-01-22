@@ -19,3 +19,26 @@ Before running the script, make sure you have the following libraries installed:
 ```bash
 pip install beautifulsoup4
 pip install requests
+````
+
+Usage
+Clone this repository to your local machine:
+  git clone https://github.com/your-username/movie-list-scraper.git
+  cd movie-list-scraper
+  cd movie-list-scraper
+  python movie_scraper.py
+
+After the script runs, check the generated movie.txt file, which contains the list of movie titles in reversed order.
+
+How the Script Works
+The script sends a request to the URL of the Empire Online article on the best movies.
+It retrieves the HTML of the page using requests.
+Using BeautifulSoup, it parses the HTML and extracts all the movie titles located in <h3> elements with the class title.
+The list of movies is reversed.
+The reversed list of movie titles is saved into a text file called movie.txt.
+
+Movie Title 100
+Movie Title 99
+Movie Title 98
+...
+Movie Title 1
