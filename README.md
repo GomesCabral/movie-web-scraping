@@ -1,26 +1,21 @@
-# Movie Title Scraper
+# Movie List Scraper
 
-This Python script utilizes BeautifulSoup and Requests libraries to scrape movie titles from a webpage and save them in a text file.
+This Python script scrapes a list of the best movies from an article on **Empire Online** using the **BeautifulSoup** library. The list of movies is extracted from the webpage, reversed, and then saved to a text file (`movie.txt`).
 
-## Description
+## Features
+- **Web Scraping**: The script scrapes a webpage that contains a list of movies.
+- **Movie Extraction**: Extracts movie titles from specific HTML elements.
+- **Data Reversal**: Reverses the order of the movie list before saving.
+- **File Output**: Saves the reversed movie list into a text file.
 
-The code accesses a specific URL (`https://web.archive.org/web/20200518073855/https://www.empireonline.com/movies/features/best-movies-2/`) using the `requests` library. Then, it uses `BeautifulSoup` to parse the HTML content and find all movie titles under the `<h3>` tag with the class `title`. The script retrieves the movie titles, reverses their order, and saves them into a text file named `movie.txt`.
+## Technologies Used
+- **Python**: The programming language used for this script.
+- **BeautifulSoup**: A Python library for parsing HTML and XML documents.
+- **Requests**: A Python library to send HTTP requests and retrieve web pages.
 
-## How to Use
+## Requirements
+Before running the script, make sure you have the following libraries installed:
 
-1. Ensure you have Python installed.
-2. Install the necessary libraries by running:
-   ```bash
-   pip install beautifulsoup4 requests
-
-1. Run the Python script movie_title_scraper.py.
-   python movie_title_scraper.py
-2. After execution, the script will generate a file named movie.txt containing a list of movie titles scraped from the specified URL.
-
-Important Note
-Ensure that you have proper permissions to scrape content from the website in accordance with their terms of service and legal constraints.
-Libraries Used
-BeautifulSoup
-Requests
-Author
-Gomes Cabral
+```bash
+pip install beautifulsoup4
+pip install requests
